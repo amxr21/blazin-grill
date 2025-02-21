@@ -23,7 +23,7 @@ const ClosingBanner = () => {
                 <Word text={'it over?'} />
             </div>
 
-            <img className="absolute left-120 -top-20 w-[40rem]" src={Burger} alt="" />
+            <img className="absolute left-105 -top-16 w-[36rem]" src={Burger} alt="" />
 
 
         </div>

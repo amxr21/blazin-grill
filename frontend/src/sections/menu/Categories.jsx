@@ -2,12 +2,15 @@ import { CategoryHeader, CategoryMeals } from "../../components"
 
 import { menu } from '../../data'
  
-const Categories = () => { 
+const Categories = () => {
     return (
         <div>
 
             {
                 menu.map((group) => {
+                    console.log('====================================');
+                    console.log(group);
+                    console.log('====================================');
                     return (
                         <div className="category px-16 mt-10 mb-40">
                             
