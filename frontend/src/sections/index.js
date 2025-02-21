@@ -1,0 +1,6 @@
+export { default as Navbar } from "./Navbar"
+export { default as Hero } from "./home/Hero"
+export { default as Features } from "./home/Features"
+export { default as Delivery } from "./home/Delivery"
+export { default as ClosingBanner } from "./home/ClosingBanner"
+export { default as Footer } from "./Footer"
