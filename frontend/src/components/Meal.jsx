@@ -1,9 +1,9 @@
-const Meal = ({image, name, ingredients, price}) => {
+const Meal = ({image, name, category, ingredients, price}) => {
     return (
         <div className="meal flex flex-col items-center">
             
-            <div className="meal-image w-72 h-60 relative flex flex-col items-center">
-                <img src={image} alt="" className=" z-50 h-full " />
+            <div className={`meal-image ${category == 'sub' ? 'w-96' : 'w-fit'} relative flex flex-col items-center`}>
+                <img src={image} alt="" className=" z-50 w-fit h-full " />
 
                 <div className="absolute bottom-4 z-0 meal-shadow opacity-80 w-64 h-10 bg-black rounded-[50%] shadow-lg"></div>
             </div>

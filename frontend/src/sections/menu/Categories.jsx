@@ -7,19 +7,19 @@ const Categories = () => {
         <div>
 
             {
-                menu.map((group) => {
+                menu.map((group, i) => { 
                     console.log('====================================');
                     console.log(group);
                     console.log('====================================');
                     return (
-                        <div className="category px-16 mt-10 mb-40">
+                        <div key={i} className="category px-16 mt-10 mb-40">
                             
                             <CategoryHeader
                                 category={group['category']}
                                 addOns="Add fries:+ $2.99"
                             />
 
-                            <CategoryMeals meals={group['items']} />
+                            <CategoryMeals meals={[group['category'],group['items']]} />
                             
                             
 

@@ -10,6 +10,9 @@ import Burger5 from "./assets/images/burgers/5.png"
 import Burger6 from "./assets/images/burgers/6.png"
 
 
+ import { Burgers, Subs } from "./constants/Images"
+
+
 const featuresContent = [
     {
         header: "Burger Bliss Awaits, Sizzles & Delights!",
@@ -39,37 +42,37 @@ const menu = [
         name: "Classic Cheeseburger", 
         price: 9.99, 
         description: "Classic beef patty with melted cheese, lettuce, tomato, and special sauce.",
-        image: Burger1
+        image: Burgers[0]
       },
       { 
         name: "Double Cheeseburger", 
         price: 10.99, 
         description: "Two beef patties with double cheese, lettuce, tomato, and special sauce.",
-        image: Burger2
+        image: Burgers[1]
       },
       { 
         name: "Mushroom Swiss Burger", 
         price: 10.99, 
         description: "Beef patty topped with Swiss cheese, mushrooms, and grilled onions.",
-        image: Burger3
+        image: Burgers[2]
       },
       { 
         name: "Bacon Burger", 
         price: 10.99, 
         description: "Beef patty topped with crispy bacon, cheese, and special sauce.",
-        image: Burger4
+        image: Burgers[3]
       },
       { 
         name: "BBQ Bacon Cheeseburger", 
         price: 11.99, 
         description: "Beef patty with bacon, cheddar cheese, and BBQ sauce.",
-        image: Burger5
+        image: Burgers[4]
       },
       { 
         name: "Blazing Inferno Burger", 
         price: 11.99, 
         description: "Spicy beef patty with jalapeños, pepper jack cheese, and spicy sauce.",
-        image: Burger6
+        image: Burgers[5]
       }
     ]
   },
@@ -80,49 +83,49 @@ const menu = [
         name: "Turkey Sub", 
         price: 9.99, 
         description: "Fresh turkey slices with lettuce, tomato, and mayo on a hoagie roll.",
-        image: "/images/turkey-sub.jpg"
+        image: Subs[0]
       },
       { 
         name: "Steak Philly", 
         price: 10.99, 
         description: "Grilled steak with peppers, onions, and melted cheese.",
-        image: "/images/steak-philly.jpg"
+        image: Subs[1]
       },
       { 
         name: "Chicken Philly", 
         price: 10.99, 
         description: "Grilled chicken with peppers, onions, and melted cheese.",
-        image: "/images/chicken-philly.jpg"
+        image: Subs[2]
       },
       { 
         name: "Hot Buffalo", 
         price: 10.99, 
         description: "Spicy buffalo chicken with lettuce and ranch dressing.",
-        image: "/images/hot-buffalo.jpg"
+        image: Subs[3]
       },
       { 
         name: "Xtreme Cheesesteak", 
         price: 11.99, 
         description: "Loaded cheesesteak with extra cheese and toppings.",
-        image: "/images/xtreme-cheesesteak.jpg"
+        image: Subs[4]
       },
       { 
         name: "Crispy Chicken Sub", 
         price: 11.99, 
         description: "Crispy fried chicken with lettuce, tomato, and mayo.",
-        image: "/images/crispy-chicken-sub.jpg"
+        image: Subs[5]
       },
       { 
         name: "NYA Gyro Cheese", 
         price: 11.99, 
         description: "Classic gyro meat with cheese, lettuce, tomato, and tzatziki sauce.",
-        image: "/images/nya-gyro-cheese.jpg"
+        image: Subs[6]
       },
       { 
         name: "Buffalo Wrap", 
         price: 10.99, 
         description: "Spicy buffalo chicken wrapped with lettuce and ranch.",
-        image: "/images/buffalo-wrap.jpg"
+        image: Subs[7]
       }
     ]
   },
