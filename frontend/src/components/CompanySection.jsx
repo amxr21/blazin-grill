@@ -4,10 +4,10 @@ const CompanySection = () => {
                     <div>
                     <h3 className="text-2xl font-normal mb-6">INFO</h3>
                     <ul className="space-y-1 text-lg font-extralight">
-                        <li>Menu PDF</li>
-                        <li>Locations</li>
-                        <li>Franchising</li>
-                        <li>Our Secret</li>
+                        <a href="#"><li>Menu PDF</li></a>
+                        <a href="#"><li>Locations</li></a>
+                        <a href="#"><li>Franchising</li></a>
+                        <a href="#"><li>Our Secret</li></a>
                     </ul>
                     </div>
                     
@@ -15,10 +15,10 @@ const CompanySection = () => {
                     <div>
                         <h3 className="text-2xl font-normal mb-6">COMPANY</h3>
                         <ul className="space-y-1 text-lg font-extralight">
-                            <li>About us</li>
-                            <li>Get in touch</li>
-                            <li>Join the team!</li>
-                            <li>FAQs</li>
+                            <a href="#"><li>About us</li></a>
+                            <a href="#"><li>Get in touch</li></a>
+                            <a href="#"><li>Join the team!</li></a>
+                            <a href="#"><li>FAQs</li></a>
                         </ul>
                     </div>
 
