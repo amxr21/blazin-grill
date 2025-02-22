@@ -27,23 +27,21 @@ import Side2 from "../assets/images/sides/2.png"
 const Sides = [Side1, Side2];
 
 
-import LoadedFries1 from "../assets/images/loaded-fries/8.png";
-import LoadedFries2 from "../assets/images/loaded-fries/2.png";
-import LoadedFries3 from "../assets/images/loaded-fries/3.png";
+import LoadedFries1 from "../assets/images/loaded-fries/1.png";
+import LoadedFries2 from "../assets/images/loaded-fries/2.png"; 
 
-const LoadedFries = [LoadedFries1, LoadedFries2, LoadedFries3];
-
+const LoadedFries = [ LoadedFries1, LoadedFries2 ];
 
 
-import Seafood1 from "../assets/images/seafood/8.png";
+
+import Seafood1 from "../assets/images/seafood/1.png";
 import Seafood2 from "../assets/images/seafood/2.png";
 import Seafood3 from "../assets/images/seafood/3.png";
-import Seafood4 from "../assets/images/seafood/4.png";
 
-const Seafood = [Seafood1, Seafood2, Seafood3, Seafood4];
-
+const Seafood = [ Seafood1, Seafood2, Seafood3 ];
 
 
 
 
-export { Burgers, Subs }
+
+export { Burgers, Subs, Sides, LoadedFries, Seafood }

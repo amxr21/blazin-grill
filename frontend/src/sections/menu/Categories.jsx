@@ -8,9 +8,6 @@ const Categories = () => {
 
             {
                 menu.map((group, i) => { 
-                    console.log('====================================');
-                    console.log(group);
-                    console.log('====================================');
                     return (
                         <div key={i} className="category px-16 mt-10 mb-40">
                             

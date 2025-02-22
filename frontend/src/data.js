@@ -2,15 +2,8 @@ import Image1 from "./assets/images/features/image-1.jpg"
 import Image2 from "./assets/images/features/image-2.jpg"
 import Image3 from "./assets/images/features/image-3.jpg"
 
-import Burger1 from "./assets/images/burgers/1.png"
-import Burger2 from "./assets/images/burgers/2.png"
-import Burger3 from "./assets/images/burgers/3.png"
-import Burger4 from "./assets/images/burgers/4.png"
-import Burger5 from "./assets/images/burgers/5.png"
-import Burger6 from "./assets/images/burgers/6.png"
 
-
- import { Burgers, Subs } from "./constants/Images"
+ import { Burgers, Subs, LoadedFries, Seafood, Sides } from "./constants/Images"
 
 
 const featuresContent = [
@@ -134,53 +127,58 @@ const menu = [
     items: [
       { 
         name: "Catfish", 
-        prices: { small: 6.99, large: 10.99 }, 
+        prices: { 6: 6.99, 10: 10.99 }, 
         description: "Crispy fried catfish fillets served with dipping sauce.",
-        image: "/images/catfish.jpg"
+        image: Seafood[0]
       },
       { 
         name: "Butterfly Shrimp", 
-        prices: { small: 7.99, large: 12.99 }, 
+        prices: { 6: 7.99, 10: 12.99 }, 
         description: "Golden-fried shrimp served with cocktail sauce.",
-        image: "/images/butterfly-shrimp.jpg"
+        image: Seafood[1]
       },
       { 
         name: "Jumbo 8-Piece", 
-        prices: { small: 8.99, large: 13.99 }, 
+        prices: { 6: 8.99, 10: 13.99 }, 
         description: "Large crispy shrimp served with fries.",
-        image: "/images/jumbo-8-piece.jpg"
+        image: Seafood[2]
       }
+    ]
+  },
+  {
+    category: "loaded fries",
+    items: [
+      { 
+        name: "Steak Loaded Fries", 
+        price: 8.99, 
+        description: "Fries topped with grilled steak, cheese, and sauce.",
+        image: LoadedFries[0]
+      },
+      { 
+        name: "Chicken Loaded Fries", 
+        price: 8.99, 
+        description: "Fries topped with grilled chicken, cheese, and sauce.",
+        image: LoadedFries[1]
+      },
     ]
   },
   {
     category: "sides",
     items: [
       { 
-        name: "Steak Loaded Fries", 
-        price: 8.99, 
-        description: "Fries topped with grilled steak, cheese, and sauce.",
-        image: "/images/steak-loaded-fries.jpg"
-      },
-      { 
-        name: "Chicken Loaded Fries", 
-        price: 8.99, 
-        description: "Fries topped with grilled chicken, cheese, and sauce.",
-        image: "/images/chicken-loaded-fries.jpg"
-      },
-      { 
         name: "Blazing Hot Wings", 
         prices: { 6: 6.99, 10: 10.99 }, 
         description: "Spicy hot wings served with dipping sauce.",
-        image: "/images/blazing-hot-wings.jpg"
+        image: Sides[0]
       },
       { 
         name: "Spicy BBQ Wings", 
         prices: { 6: 6.99, 10: 10.99 }, 
         description: "BBQ wings with a spicy kick, served with sauce.",
-        image: "/images/spicy-bbq-wings.jpg"
+        image: Sides[1]
       }
     ]
-  }
+  },
 ];
 
 

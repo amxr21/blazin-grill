@@ -1,4 +1,9 @@
+import PriceLabel from "../assets/images/label.png"
+
+import { MealPrice } from './index'
+
 const Meal = ({image, name, category, ingredients, price}) => {
+ 
     return (
         <div className="meal flex flex-col items-center">
             
@@ -14,11 +19,22 @@ const Meal = ({image, name, category, ingredients, price}) => {
                 <h4 className="meal-name text-2xl font-normal uppercase">{name}</h4>
                 <p className="meal-name text-sm font-light">{ingredients}</p>
             </div>
-                
+            <div className="w-full flex justify-center gap-6">
+                {
+                    typeof price != "object"
+                    ?
+                    <MealPrice priceLabel={PriceLabel} price={'$' + price} number={1} />
+                    :
+                    Object.entries(price).map((p, i) => {
+                        return (
+                            <MealPrice key={i} priceLabel={PriceLabel} price={'$' + p[1]} number={p[0]} />
+                        )
+                    })
+                }
 
-            <div className="meal-price bg-red-700 rounded-lg text-[#FBF7EE] py-2 px-6">
-                <p className="font-[Stinger] text-3xl">$ {price}</p>
             </div>
+
+            
 
         </div>
     )
