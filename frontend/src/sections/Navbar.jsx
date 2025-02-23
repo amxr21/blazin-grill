@@ -7,7 +7,8 @@ const Navbar = () => {
             <Navlinks/>
             <ActionButton
                 text={"Order now"}
-                classes={'bg-red-800 text-md px-6 py-4 text-[#FBF7EE] uppercase'}
+                containerClasses={'bg-red-800 text-md px-4 py-1 w-28 text-center text-[#FBF7EE] uppercase'}
+                link={'/menu/Order'}
                 handleClick={()=>{}}
             />
         </div>

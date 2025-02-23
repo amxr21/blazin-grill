@@ -182,8 +182,43 @@ const menu = [
 ];
 
 
+const locations = [
+  {
+    city: 'Detroit',
+    state: 'Michigan',
+    number: '(313) 635-5194',
+    address: '13603 W Chicago, Detroit, MI 48228',
+  },
+  {
+    city: 'Detroit',
+    state: 'Michigan',
+    number: '(313) 635-5194',
+    address: '17151 W 8 Mile Rd, Detroit, MI 48235',
+  },
+  {
+    city: 'Detroit',
+    state: 'Michigan',
+    number: '(313) 635-5194',
+    address: '7431 W Vernor Hwy, Detroit, MI 48209',
+  },
+  {
+    city: 'Hamtramck',
+    state: 'Michigan',
+    number: '(313) 635-5194',
+    address: '9240 Conant St, Hamtramck, MI 48212',
+  },
+  {
+    city: 'Detroit',
+    state: 'Michigan',
+    number: '(313) 635-5194',
+    address: '20851 Plymouth Rd, Detroit, MI 48228',
+  },
+];
+
+
 
 export   {
     featuresContent,
-    menu
+    menu,
+    locations
 }
