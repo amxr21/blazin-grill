@@ -3,7 +3,7 @@ import Image2 from "./assets/images/features/image-2.jpg"
 import Image3 from "./assets/images/features/image-3.jpg"
 
 
- import { Burgers, Subs, LoadedFries, Seafood, Sides } from "./constants/Images"
+ import { Burgers, Subs, LoadedFries, Seafood, Sides, Branches } from "./constants/Images"
 
 
 const featuresContent = [
@@ -217,8 +217,42 @@ const locations = [
 
 
 
+const branches = [
+  {
+    id: 1,
+    name: "Michigan Branch",
+    description: "Located in the heart of Michigan, our flagship branch is where it all began. Known for its warm ambiance and signature dishes, this is where our story started, bringing bold flavors to the community.",
+    image: Branches[0]
+  },
+  {
+    id: 2,
+    name: "Detroit Branch",
+    description: "In vibrant Detroit, our branch embodies the city’s energy and spirit. A favorite spot for locals, it is the perfect place to savor our iconic meals while enjoying a city with so much history and culture.",
+    image: Branches[0]
+  },
+  {
+    id: 3,
+    name: "Chicago Branch",
+    description: "Our Chicago location combines the charm of the Windy City with our passion for great food. Nestled in a bustling neighborhood, it’s where bold flavors meet an unforgettable dining experience.",
+    image: Branches[0]
+  },
+  {
+    id: 4,
+    name: "Coming Soon",
+    description: "Opening soon... 🔥✨",
+    image: Branches[0]
+  }
+];
+
+
+
+
+
+
+
 export   {
     featuresContent,
     menu,
-    locations
+    locations,
+    branches,
 }

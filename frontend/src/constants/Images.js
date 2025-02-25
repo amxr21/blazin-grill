@@ -42,6 +42,9 @@ const Seafood = [ Seafood1, Seafood2, Seafood3 ];
 
 
 
+import Branch from '../assets/images/image.jpg'
+
+const Branches = [ Branch ]
 
 
-export { Burgers, Subs, Sides, LoadedFries, Seafood }
+export { Burgers, Subs, Sides, LoadedFries, Seafood, Branches }

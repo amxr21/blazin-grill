@@ -225,3 +225,32 @@
   .meal-shadow{
     filter: blur(10px);
   }
+
+
+  
+  .branch-card{
+    box-shadow: 0  14px 10px rgba(0, 0, 0, 0.150);
+  }
+
+  .soon::before{
+    content: "";
+    position: absolute;
+    background-color: rgba(88, 8, 8, 0.918);
+    filter: blur(2px);
+    overflow: hidden;
+    left: 0; top: 0;
+    height: 100%; width: 100%;
+  }
+  .soon::after{
+    content: "Opening Soon...";
+    font-size: 2.8rem;
+    color: white;
+    display: flex;
+    align-items: center; justify-content: center;
+    position: absolute;
+    background-color: rgba(88, 8, 8, 0);
+    filter: blur(0px);
+    overflow: hidden;
+    left: 0; top: 0;
+    height: 100%; width: 100%;
+  }
