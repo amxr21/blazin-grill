@@ -1,6 +1,6 @@
-const Rectangle = ({color}) => {
+const Rectangle = ({color, classes}) => {
     return (
-        <div className={`word bg-${color} text-${color} grow rounded-2xl`}>..</div>
+        <div className={`word bg-${color} text-${color} grow rounded-xl lg:rounded-2xl ${classes}`}>..</div>
     )
 }
 

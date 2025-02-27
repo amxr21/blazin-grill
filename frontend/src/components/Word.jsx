@@ -1,6 +1,6 @@
-const Word = ({text}) => {
+const Word = ({text, classes}) => {
     return (
-        <div className="word w-fit">{text}</div>
+        <div className={`word w-fit ${classes}`}>{text}</div>
     )
 }
 
