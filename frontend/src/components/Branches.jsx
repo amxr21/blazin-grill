@@ -4,7 +4,7 @@ import { branches } from '../data'
 
 const Branches = () => {
     return (
-        <div className='relative flex flex-col gap-4 h-[135rem] -mt-24'>
+        <div className='relative flex flex-col gap-4 h-[160rem] -mt-24'>
 
             {
                 branches.map((branch, i) => {

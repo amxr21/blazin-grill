@@ -8,7 +8,7 @@ const Features = () => {
 
 
     return (
-        <div id="Features" className="px-16 py-40 flex flex-col gap-y-20">
+        <div id="Features" className="px-8 lg:px-16 py-16 lg:py-40 flex flex-col gap-y-20 overflow-hidden">
             {
                 featuresContent.map((feature,i) => {
                     return (

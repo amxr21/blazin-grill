@@ -241,6 +241,12 @@ const branches = [
     name: "Coming Soon",
     description: "Opening soon... 🔥✨",
     image: Branches[0]
+  },
+  {
+    id: 4,
+    name: "Coming Soon",
+    description: "Opening soon... 🔥✨",
+    image: Branches[0]
   }
 ];
 

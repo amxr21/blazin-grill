@@ -1,198 +1,6 @@
 @import "tailwindcss";
+@import "./fonts.css";
 
-@font-face {
-    font-family: 'StingerWide';
-    src: url('./assets/fonts/StingerWideTrial-Thin.ttf') format('truetype');
-    font-weight: 100;
-  }
-  
-  @font-face {
-    font-family: 'StingerWide';
-    src: url('./assets/fonts/StingerWideTrial-Light.ttf') format('truetype');
-    font-weight: 300;
-  }
-  
-  @font-face {
-    font-family: 'StingerWide';
-    src: url('./assets/fonts/StingerWideTrial-Regular.ttf') format('truetype');
-    font-weight: 400;
-  }
-  
-  @font-face {
-    font-family: 'StingerWide';
-    src: url('./assets/fonts/StingerWideTrial-Medium.ttf') format('truetype');
-    font-weight: 500;
-  }
-  
-  @font-face {
-    font-family: 'StingerWide';
-    src: url('./assets/fonts/StingerWideTrial-SemiBold.ttf') format('truetype');
-    font-weight: 600;
-  }
-  
-  @font-face {
-    font-family: 'StingerWide';
-    src: url('./assets/fonts/StingerWideTrial-Bold.ttf') format('truetype');
-    font-weight: 700;
-  }
-  
-  @font-face {
-    font-family: 'StingerWide';
-    src: url('./assets/fonts/StingerWideTrial-ExtraBold.ttf') format('truetype');
-    font-weight: 800;
-  }
-  
-  @font-face {
-    font-family: 'StingerWide';
-    src: url('./assets/fonts/StingerWideTrial-Heavy.ttf') format('truetype');
-    font-weight: 900;
-  }
-  
-  @font-face {
-    font-family: 'StingerWide';
-    src: url('./assets/fonts/StingerWideTrial-ThinItalic.ttf') format('truetype');
-    font-weight: 100;
-    font-style: italic;
-  }
-  
-  @font-face {
-    font-family: 'StingerWide';
-    src: url('./assets/fonts/StingerWideTrial-LightItalic.ttf') format('truetype');
-    font-weight: 300;
-    font-style: italic;
-  }
-  
-  @font-face {
-    font-family: 'StingerWide';
-    src: url('./assets/fonts/StingerWideTrial-Italic.ttf') format('truetype');
-    font-weight: 400;
-    font-style: italic;
-  }
-  
-  @font-face {
-    font-family: 'StingerWide';
-    src: url('./assets/fonts/StingerWideTrial-BoldItalic.ttf') format('truetype');
-    font-weight: 700;
-    font-style: italic;
-  }
-  
-  @font-face {
-    font-family: 'StingerWide';
-    src: url('./assets/fonts/StingerWideTrial-HeavyItalic.ttf') format('truetype');
-    font-weight: 900;
-    font-style: italic;
-  }
-  
-  /* Stinger Fit Variants */
-  
-  @font-face {
-    font-family: 'StingerFit';
-    src: url('./assets/fonts/StingerFitTrial-Thin.ttf') format('truetype');
-    font-weight: 100;
-  }
-  
-  @font-face {
-    font-family: 'StingerFit';
-    src: url('./assets/fonts/StingerFitTrial-Light.ttf') format('truetype');
-    font-weight: 300;
-  }
-  
-  @font-face {
-    font-family: 'StingerFit';
-    src: url('./assets/fonts/StingerFitTrial-Regular.ttf') format('truetype');
-    font-weight: 400;
-  }
-  
-  @font-face {
-    font-family: 'StingerFit';
-    src: url('./assets/fonts/StingerFitTrial-Bold.ttf') format('truetype');
-    font-weight: 700;
-  }
-  
-  @font-face {
-    font-family: 'StingerFit';
-    src: url('./assets/fonts/StingerFitTrial-Heavy.ttf') format('truetype');
-    font-weight: 900;
-  }
-  
-  @font-face {
-    font-family: 'StingerFit';
-    src: url('./assets/fonts/StingerFitTrial-ThinItalic.ttf') format('truetype');
-    font-weight: 100;
-    font-style: italic;
-  }
-  
-  @font-face {
-    font-family: 'StingerFit';
-    src: url('./assets/fonts/StingerFitTrial-LightItalic.ttf') format('truetype');
-    font-weight: 300;
-    font-style: italic;
-  }
-  
-  @font-face {
-    font-family: 'StingerFit';
-    src: url('./assets/fonts/StingerFitTrial-Italic.ttf') format('truetype');
-    font-weight: 400;
-    font-style: italic;
-  }
-  
-  @font-face {
-    font-family: 'StingerFit';
-    src: url('./assets/fonts/StingerFitTrial-BoldItalic.ttf') format('truetype');
-    font-weight: 700;
-    font-style: italic;
-  }
-  
-  @font-face {
-    font-family: 'StingerFit';
-    src: url('./assets/fonts/StingerFitTrial-HeavyItalic.ttf') format('truetype');
-    font-weight: 900;
-    font-style: italic;
-  }
-  
- 
-
-  @font-face {
-    font-family: 'Antonio';
-    src: url('./assets/fonts/Antonio-Thin.ttf') format('truetype');
-    font-weight: 100;
-  }
-  
-  @font-face {
-    font-family: 'Antonio';
-    src: url('./assets/fonts/Antonio-ExtraLight.ttf') format('truetype');
-    font-weight: 200;
-  }
-  
-  @font-face {
-    font-family: 'Antonio';
-    src: url('./assets/fonts/Antonio-Light.ttf') format('truetype');
-    font-weight: 300;
-  }
-  
-  @font-face {
-    font-family: 'Antonio';
-    src: url('./assets/fonts/Antonio-Regular.ttf') format('truetype');
-    font-weight: 400;
-  }
-  
-  @font-face {
-    font-family: 'Antonio';
-    src: url('./assets/fonts/Antonio-Medium.ttf') format('truetype');
-    font-weight: 500;
-  }
-  
-  @font-face {
-    font-family: 'Antonio';
-    src: url('./assets/fonts/Antonio-SemiBold.ttf') format('truetype');
-    font-weight: 600;
-  }
-  
-  @font-face {
-    font-family: 'Antonio';
-    src: url('./assets/fonts/Antonio-Bold.ttf') format('truetype');
-    font-weight: 700;
-  }   
 
 
   #Navbar{
@@ -201,7 +9,7 @@
 
   body{
     background-color: #FBF7EE;
-    font-family: 'StingerFit', 'StingerWide';
+    font-family: 'Stinger', 'Antonio';
   }
 
   .hero-video::after{
@@ -209,7 +17,7 @@
     width: 100%; height: 100%;
     position: absolute;
     left: 0; top: 0;
-    background: linear-gradient(90deg,#8d0a04,#8d0b04,#8d0b0497, #b20e0543)
+    background: linear-gradient(90deg,#8d0a04,#8d0b04,#8d0b0497, #b20e0543);
   }
 
   ::selection {
@@ -229,17 +37,21 @@
 
   
   .branch-card{
-    box-shadow: 0  14px 10px rgba(0, 0, 0, 0.150);
+    box-shadow: -14px 14px 20px rgba(0, 0, 0, 0.150);
   }
 
   .soon::before{
-    content: "";
+    content: "s";
     position: absolute;
-    background-color: rgba(88, 8, 8, 0.918);
-    filter: blur(2px);
-    overflow: hidden;
+    display: flex;
+    align-items: center; justify-content: center;
+    background: linear-gradient(217deg, rgba(158, 36, 29, 0.97) 5.33%, rgba(46, 7, 5, 0.97) 102.18%);
+
+
+    filter: blur(30px);
     left: 0; top: 0;
     height: 100%; width: 100%;
+    scale: 1.1 ;
   }
   .soon::after{
     content: "Opening Soon...";

@@ -2,7 +2,7 @@ import { ActionButton, Logo, Navlinks } from '../components/index'
 
 const Navbar = () => {
     return (
-        <div id="Navbar" className="flex justify-between items-center py-3 px-16 text-lg">
+        <div id="Navbar" className="flex justify-between items-center py-3 px-8 lg:px-16 text-lg">
             <Logo width={12} height={12}/>
             <Navlinks/>
             <ActionButton

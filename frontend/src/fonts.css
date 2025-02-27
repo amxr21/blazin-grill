@@ -1,0 +1,324 @@
+@font-face {
+    font-family: 'Stinger';
+    src: url('./assets/fonts/STINGER-REGULAR.OTF') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Stinger';
+    src: url('./assets/fonts/STINGER-BOLDITALIC.OTF') format('opentype');
+    font-weight: bold;
+    font-style: italic;
+  }
+  
+  @font-face {
+    font-family: 'Stinger';
+    src: url('./assets/fonts/STINGER-HEAVY.OTF') format('opentype');
+    font-weight: 900;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Stinger';
+    src: url('./assets/fonts/STINGER-HEAVYITALIC.OTF') format('opentype');
+    font-weight: 900;
+    font-style: italic;
+  }
+  @font-face {
+    font-family: 'Stinger';
+    src: url('./assets/fonts/STINGER-THIN.OTF') format('opentype');
+    font-weight: 100;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Stinger';
+    src: url('./assets/fonts/STINGER-THINITALIC.OTF') format('opentype');
+    font-weight: 100;
+    font-style: italic;
+  }
+  
+  @font-face {
+    font-family: 'Stinger';
+    src: url('./assets/fonts/STINGER-LIGHT.OTF') format('opentype');
+    font-weight: 300;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Stinger';
+    src: url('./assets/fonts/STINGER-LIGHTITALIC.OTF') format('opentype');
+    font-weight: 300;
+    font-style: italic;
+  }
+  
+  @font-face {
+    font-family: 'Stinger';
+    src: url('./assets/fonts/STINGER-REGULAR.OTF') format('opentype');
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Stinger';
+    src: url('./assets/fonts/STINGER-ITALIC.OTF') format('opentype');
+    font-weight: 400;
+    font-style: italic;
+  }
+  
+  @font-face {
+    font-family: 'Stinger';
+    src: url('./assets/fonts/STINGER-BOLD.OTF') format('opentype');
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Stinger';
+    src: url('./assets/fonts/STINGER-BOLDITALIC.OTF') format('opentype');
+    font-weight: 700;
+    font-style: italic;
+  }
+  
+  @font-face {
+    font-family: 'Stinger';
+    src: url('./assets/fonts/STINGER-HEAVY.OTF') format('opentype');
+    font-weight: 900;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Stinger';
+    src: url('./assets/fonts/STINGER-HEAVYITALIC.OTF') format('opentype');
+    font-weight: 900;
+    font-style: italic;
+  }
+  
+  
+  @font-face {
+    font-family: 'Stinger Fit';
+    src: url('./assets/fonts/STINGERFIT-BOLD.OTF') format('opentype');
+    font-weight: bold;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Stinger Fit';
+    src: url('./assets/fonts/STINGERFIT-BOLDITALIC.OTF') format('opentype');
+    font-weight: bold;
+    font-style: italic;
+  }
+  
+  @font-face {
+    font-family: 'Stinger Fit';
+    src: url('./assets/fonts/STINGERFIT-HEAVY.OTF') format('opentype');
+    font-weight: 900;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Stinger Fit';
+    src: url('./assets/fonts/STINGERFIT-HEAVYITALIC.OTF') format('opentype');
+    font-weight: 900;
+    font-style: italic;
+  }
+  
+  @font-face {
+    font-family: 'Stinger Fit';
+    src: url('./assets/fonts/STINGERFIT-ITALIC.OTF') format('opentype');
+    font-weight: normal;
+    font-style: italic;
+  }
+  
+  @font-face {
+    font-family: 'Stinger Fit';
+    src: url('./assets/fonts/STINGERFIT-LIGHT.OTF') format('opentype');
+    font-weight: 300;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Stinger Fit';
+    src: url('./assets/fonts/STINGERFIT-LIGHTITALIC.OTF') format('opentype');
+    font-weight: 300;
+    font-style: italic;
+  }
+  
+  @font-face {
+    font-family: 'Stinger Fit';
+    src: url('./assets/fonts/STINGERFIT-THIN.OTF') format('opentype');
+    font-weight: 100;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Stinger Fit';
+    src: url('./assets/fonts/STINGERFIT-THINITALIC.OTF') format('opentype');
+    font-weight: 100;
+    font-style: italic;
+  }
+  
+  @font-face {
+    font-family: 'Stinger Fit Trial';
+    src: url('./assets/fonts/STINGERFITTRIAL-BOLD.TTF') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Stinger Fit Trial';
+    src: url('./assets/fonts/STINGERFITTRIAL-BOLDITALIC.TTF') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+  }
+  
+  @font-face {
+    font-family: 'Stinger Fit Trial';
+    src: url('./assets/fonts/STINGERFITTRIAL-HEAVY.TTF') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Stinger Fit Trial';
+    src: url('./assets/fonts/STINGERFITTRIAL-HEAVYITALIC.TTF') format('truetype');
+    font-weight: 900;
+    font-style: italic;
+  }
+  
+  @font-face {
+    font-family: 'Stinger Fit Trial';
+    src: url('./assets/fonts/STINGERFITTRIAL-ITALIC.TTF') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+  }
+  
+  @font-face {
+    font-family: 'Stinger Fit Trial';
+    src: url('./assets/fonts/STINGERFITTRIAL-LIGHT.TTF') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Stinger Fit Trial';
+    src: url('./assets/fonts/STINGERFITTRIAL-LIGHTITALIC.TTF') format('truetype');
+    font-weight: 300;
+    font-style: italic;
+  }
+  
+  @font-face {
+    font-family: 'Stinger Fit Trial';
+    src: url('./assets/fonts/STINGERFITTRIAL-THIN.TTF') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Stinger Fit Trial';
+    src: url('./assets/fonts/STINGERFITTRIAL-THINITALIC.TTF') format('truetype');
+    font-weight: 100;
+    font-style: italic;
+  }
+  
+  @font-face {
+    font-family: 'Stinger Slim';
+    src: url('./assets/fonts/STINGERSLIM-BOLD.OTF') format('opentype');
+    font-weight: bold;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Stinger Slim';
+    src: url('./assets/fonts/STINGERSLIM-BOLDITALIC.OTF') format('opentype');
+    font-weight: bold;
+    font-style: italic;
+  }
+  
+  @font-face {
+    font-family: 'Stinger Slim';
+    src: url('./assets/fonts/STINGERSLIM-HEAVY.OTF') format('opentype');
+    font-weight: 900;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Stinger Slim';
+    src: url('./assets/fonts/STINGERSLIM-HEAVYITALIC.OTF') format('opentype');
+    font-weight: 900;
+    font-style: italic;
+  }
+  
+  @font-face {
+    font-family: 'Stinger Slim';
+    src: url('./assets/fonts/STINGERSLIM-ITALIC.OTF') format('opentype');
+    font-weight: normal;
+    font-style: italic;
+  }
+  
+  @font-face {
+    font-family: 'Stinger Slim';
+    src: url('./assets/fonts/STINGERSLIM-LIGHT.OTF') format('opentype');
+    font-weight: 300;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Stinger Slim';
+    src: url('./assets/fonts/STINGERSLIM-LIGHTITALIC.OTF') format('opentype');
+    font-weight: 300;
+    font-style: italic;
+  }
+  
+  @font-face {
+    font-family: 'Stinger Slim';
+    src: url('./assets/fonts/STINGERSLIM-THIN.OTF') format('opentype');
+    font-weight: 100;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Stinger Slim Trial';
+    src: url('./assets/fonts/STINGERSLIMTRIAL-BOLDITALIC.TTF') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+  }
+  
+  
+  
+  @font-face {
+    font-family: 'Antonio';
+    src: url('./assets/fonts/Antonio-ExtraLight.ttf') format('truetype');
+    font-weight: 200;
+  }
+  
+  @font-face {
+    font-family: 'Antonio';
+    src: url('./assets/fonts/Antonio-Light.ttf') format('truetype');
+    font-weight: 300;
+  }
+  
+  @font-face {
+    font-family: 'Antonio';
+    src: url('./assets/fonts/Antonio-Regular.ttf') format('truetype');
+    font-weight: 400;
+  }
+  
+  @font-face {
+    font-family: 'Antonio';
+    src: url('./assets/fonts/Antonio-Medium.ttf') format('truetype');
+    font-weight: 500;
+  }
+  
+  @font-face {
+    font-family: 'Antonio';
+    src: url('./assets/fonts/Antonio-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+  }
+  
+  @font-face {
+    font-family: 'Antonio';
+    src: url('./assets/fonts/Antonio-Bold.ttf') format('truetype');
+    font-weight: 700;
+  }   

@@ -4,7 +4,7 @@ import Burger from "../../assets/images/burger.png"
 
 const ClosingBanner = () => {
     return (
-        <div id="ClosingBanner" className="relative my-56 p-16 flex flex-col gap-y-8">
+        <div id="ClosingBanner" className="bg-amber-100 overflow-hidden relative my-56 p-16 flex flex-col gap-y-8">
             <div className="flex row w-full gap-x-5 text-8xl font-semibold italic uppercase">
                 <Word text={'Feeling'} />
                 <Rectangle color={'red-700'} />

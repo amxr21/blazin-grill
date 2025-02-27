@@ -8,7 +8,7 @@ const BranchCard = ({Id, header, storyText, imageLink, classes}) => {
 
 
     return (
-        <div id={Id} className={`branch-card absolute flex flex-col bg-[#FBF2DA] p-8 w-[36rem] h-[40rem] gap-y-8 ${classes} ${style}`} >
+        <div id={Id} className={`branch-card absolute flex flex-col bg-[#f6f0df] p-8 w-[36rem] h-[40rem] gap-y-8 ${classes} ${style} overflow-hidden`} >
 
             <div className="image w-full h-96 overflow-hidden bg-amber-300">
                 <img src={imageLink} alt="" />

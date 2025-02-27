@@ -7,7 +7,7 @@ const NavLinks = () => {
 
 
     return (
-        <div className="flex h-fit gap-x-32">
+        <div className="hidden  lg:flex h-fit gap-x-32">
 
             {
                 links.map((element) => {
