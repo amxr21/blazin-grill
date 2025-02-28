@@ -9,7 +9,7 @@ const Categories = () => {
             {
                 menu.map((group, i) => { 
                     return (
-                        <div key={i} className="category px-16 mt-10 mb-40">
+                        <div key={i} className="category px-8 lg:px-16 mt-10 mb-40">
                             
                             <CategoryHeader
                                 category={group['category']}
