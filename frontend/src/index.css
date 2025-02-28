@@ -10,7 +10,14 @@
   body{
     background-color: #FBF7EE;
     font-family: 'Stinger', 'Antonio';
+    scroll-behavior: smooth;
   }
+
+  #NavbarLinks {
+    transition: all 0.3s ease-in-out;
+    overflow: hidden; 
+}
+
 
   .hero-video::after{
     content: "";

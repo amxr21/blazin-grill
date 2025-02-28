@@ -1,7 +1,7 @@
 const ActionButton = ({text, link, containerClasses, buttonClasses, handleClick}) => {
     return (
         <div className={`${containerClasses}`}>
-            <button className={`font-[] h-fit cursor-pointer ${buttonClasses}`} onClick={handleClick}>
+            <button className={`h-fit cursor-pointer ${buttonClasses}`} onClick={handleClick}>
                 <a href={link}>
                     {text}
                 </a>
