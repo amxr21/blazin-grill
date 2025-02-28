@@ -5,7 +5,7 @@ const Us = () => {
     return (
         <>
             <TopBanner
-                key={'Who are we?'}
+                Key= 'Who are we?' 
                 header='Who are we?'
                 subheader='From Our Kitchen to Your Neighborhood: Sharing Flavors, Building Memories'
                 />

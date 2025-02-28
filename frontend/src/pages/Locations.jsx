@@ -6,15 +6,15 @@ const Locations = () => {
     return (
         <>
             <TopBanner
-                key={'Locations'}
+                Key='Locations' 
                 header='Locations & order online'
                 subheader="Come close, we don't bite"
             />
 
-            <div className="px-18 py-16 mb-56 flex flex-col gap-y-10">
+            <div className="px-8 lg:px-16 py-8 lg:py-16 mb-56 flex flex-col gap-y-10">
                 <LocationsHeader />
 
-                <div className="grid grid-cols-3 gap-8">
+                <div className="grid lg:grid-cols-3 gap-8">
                     
                 {
                     locations.map((location) => {
