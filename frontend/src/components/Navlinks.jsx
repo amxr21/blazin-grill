@@ -1,5 +1,5 @@
 import { Logo } from "./index"
-import NavLink from "./Navlink"
+import { NavLink } from './index' 
 
 const NavLinks = () => {
 
