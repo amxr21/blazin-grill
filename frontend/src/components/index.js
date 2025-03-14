@@ -20,4 +20,5 @@ export {default as Location} from "./Location"
 export {default as BranchCard} from "./BranchCard"
 export {default as Branches} from "./Branches"
 export {default as ShowBarButton} from "./ShowBarButton"
-export {default as Navlink} from "./Navlink"
+
+export {default as Navlink} from "./NavLink"
