@@ -1,4 +1,4 @@
-import QRCodeSrc from "../assets/images/QrCode.png"
+import QRCodeSrc from "../assets/images/qrcode.png"
 
 const QrCode = () => {
     return (
