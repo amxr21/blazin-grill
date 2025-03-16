@@ -11,7 +11,7 @@ const Locations = () => {
                 subheader="Come close, we don't bite"
             />
 
-            <div className="px-8 lg:px-16 py-8 lg:py-16 mb-56 flex flex-col gap-y-10">
+            <div className="px-8 lg:px-16 py-8 lg:py-10 mb-20 flex flex-col gap-y-10">
                 <LocationsHeader />
 
                 <div className="grid lg:grid-cols-3 gap-8">

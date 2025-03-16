@@ -13,7 +13,7 @@ const Location = ({state, city, address, phoneNumber}) => {
             <ActionButton
                 key={'Order now'}
                 text={'Order now'}
-                containerClasses={"bg-red-500 w-full lg:w-40 text-center flex justify-center items-center py-1.5 lg:py-5"}
+                containerClasses={"bg-red-500 w-full lg:w-36 text-center flex justify-center items-center py-1.5 lg:py-2"}
                 buttonClasses={"uppercase text-xl lg:text-2xl text-[#FBF7EE] font-[Antonio]"}
                 link={'#'}
                 
