@@ -30,16 +30,13 @@ A modern, visually appealing landing page for a grill restaurant built with **Re
 blazin-grill/
 ├── public/
 ├── src/
-│ ├── assets/
-│ ├── components/
-│ ├── pages/
-│ └── App.jsx
+│   ├── assets/
+│   ├── components/
+│   ├── pages/
+│   └── App.jsx
 ├── tailwind.config.js
 └── index.html
 
-bash
-Copy
-Edit
 
 ## 🚀 Getting Started
 
