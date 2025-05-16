@@ -4,7 +4,7 @@ A modern, visually appealing landing page for a grill restaurant built with **Re
 
 ## 🔥 Live Demo
 
-🚀 [View Live Site](https://blazin-grill.vercel.app)
+🚀 [View Live Site](https://blazin-grill.onrender.com/)
 
 ## ✨ Features
 
