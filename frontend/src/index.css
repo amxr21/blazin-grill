@@ -75,8 +75,8 @@
       height: var(--pile-h-lg);
       /* Cap the swing against the viewport: at ~1024-1050px the full 11rem of
          padding would push the fan wider than the available space. */
-      padding-inline: min(var(--pile-pad-lg), max(0rem, calc((100vw - 44rem) / 2)));
-      max-width: min(100%, calc(36rem + 2 * var(--pile-pad-lg)));
+      padding-inline: min(var(--pile-pad-lg), max(0rem, calc((100vw - 34rem) / 2)));
+      max-width: min(100%, calc(26rem + 2 * var(--pile-pad-lg)));
     }
     .pile-card{
       top: var(--top-lg);

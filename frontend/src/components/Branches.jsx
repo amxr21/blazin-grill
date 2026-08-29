@@ -14,11 +14,14 @@ import { branches } from '../data'
 // buried card shows nothing but its photo. These values expose the heading
 // plus ~4rem of story while still leaving 5rem/8rem of overlap, so the stack
 // still reads as a pile.
-const STEP = { base: 17, desktop: 32 }
+const STEP = { base: 17, desktop: 38 }
 
 // Sideways swing away from the centre line, per index step (rem). Every card
 // alternates sides, and each one sits a little further out than the last.
-const SPREAD = { base: 2.4, desktop: 9 }
+// Desktop gets a much larger swing: the cards are narrower there (26rem, see
+// BranchCard) specifically to buy this room, so each card clears far more of
+// the one beneath it. Mobile is left alone — the tight stack works there.
+const SPREAD = { base: 2.4, desktop: 14 }
 
 // Slight tilt so the fan looks laid by hand, not plotted.
 const TILT = [-5, 4, -3, 6, -4, 3]

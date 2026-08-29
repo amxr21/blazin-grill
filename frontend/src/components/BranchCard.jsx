@@ -20,9 +20,9 @@ const BranchCard = ({ Id, header, storyText, imageLink, tilt = 0, offset = 0, of
         <div
             id={Id}
             style={style}
-            className={`branch-card pile-card absolute flex flex-col bg-[#f6f0df] p-4 lg:p-8 w-[20rem] lg:w-[36rem] h-[22rem] lg:h-[40rem] gap-y-4 lg:gap-y-8 ${cardStyle} overflow-hidden`}
+            className={`branch-card pile-card absolute flex flex-col bg-[#f6f0df] p-4 lg:p-8 w-[20rem] lg:w-[26rem] h-[22rem] lg:h-[40rem] gap-y-4 lg:gap-y-8 ${cardStyle} overflow-hidden`}
         >
-            <div className="image w-full h-44 lg:h-96 overflow-hidden bg-amber-300">
+            <div className="image w-full h-44 lg:h-80 overflow-hidden bg-amber-300">
                 <img
                     src={imageLink}
                     alt={header == 'Coming Soon' ? 'A new Blazin Grill branch, opening soon' : `The ${header} storefront`}
