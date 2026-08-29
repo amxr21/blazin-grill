@@ -9,7 +9,7 @@ const Us = () => {
                 header='Who are we?'
                 subheader='From Our Kitchen to Your Neighborhood: Sharing Flavors, Building Memories'
                 />
-            <div className="px-16 py-14">
+            <div className="px-4 lg:px-16 py-14">
                 
                 
                 <Branches />

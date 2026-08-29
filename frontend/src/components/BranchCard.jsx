@@ -1,4 +1,4 @@
-const BranchCard = ({ Id, header, storyText, imageLink, tilt = 0, nudge = 0, step, index = 0 }) => {
+const BranchCard = ({ Id, header, storyText, imageLink, tilt = 0, offset = 0, offsetDesktop = 0, step, index = 0 }) => {
 
     let cardStyle = ''
 
@@ -6,10 +6,11 @@ const BranchCard = ({ Id, header, storyText, imageLink, tilt = 0, nudge = 0, ste
         cardStyle = 'soon'
     }
 
-    // Later cards sit lower and on top, so the pile reads front-to-back.
+    // Later cards sit lower, further out from the centre line, and on top.
     const style = {
         '--tilt': `${tilt}deg`,
-        '--nudge': `${nudge}px`,
+        '--offset': `${offset}rem`,
+        '--offset-lg': `${offsetDesktop}rem`,
         '--top': `${index * step.base}rem`,
         '--top-lg': `${index * step.desktop}rem`,
         zIndex: index + 1,
@@ -19,7 +20,7 @@ const BranchCard = ({ Id, header, storyText, imageLink, tilt = 0, nudge = 0, ste
         <div
             id={Id}
             style={style}
-            className={`branch-card pile-card absolute left-0 flex flex-col bg-[#f6f0df] p-4 lg:p-8 w-[20rem] lg:w-[36rem] h-[22rem] lg:h-[40rem] gap-y-4 lg:gap-y-8 ${cardStyle} overflow-hidden`}
+            className={`branch-card pile-card absolute flex flex-col bg-[#f6f0df] p-4 lg:p-8 w-[20rem] lg:w-[36rem] h-[22rem] lg:h-[40rem] gap-y-4 lg:gap-y-8 ${cardStyle} overflow-hidden`}
         >
             <div className="image w-full h-44 lg:h-96 overflow-hidden bg-amber-300">
                 <img

@@ -45,11 +45,19 @@
      edge of the earlier cards shows. Hover lifts a card clear of the stack. */
   .branch-pile{
     height: var(--pile-h);
+    /* The outermost cards swing past the card-width container; pad so the fan
+       is never clipped, and cap it so the page itself never scrolls sideways. */
+    padding-inline: var(--pile-pad);
+    max-width: min(100%, calc(20rem + 2 * var(--pile-pad)));
   }
 
+  /* Each card hangs off the container's centre line, then swings out to its
+     own side by --offset, so the pile fans open and every card's text stays
+     clear of the one above it. */
   .pile-card{
     top: var(--top);
-    transform: translateX(var(--nudge)) rotate(var(--tilt));
+    left: 50%;
+    transform: translateX(-50%) translateX(var(--offset)) rotate(var(--tilt));
     transform-origin: center top;
     transition: transform 350ms ease, box-shadow 350ms ease;
     will-change: transform;
@@ -57,21 +65,40 @@
 
   .pile-card:hover,
   .pile-card:focus-within{
-    transform: translateX(var(--nudge)) translateY(-1.25rem) rotate(0deg) scale(1.02);
+    transform: translateX(-50%) translateX(var(--offset)) translateY(-1.25rem) rotate(0deg) scale(1.03);
     box-shadow: -18px 22px 34px rgba(0, 0, 0, 0.28);
     z-index: 99;
   }
 
   @media (min-width: 1024px){
-    .branch-pile{ height: var(--pile-h-lg); }
-    .pile-card{ top: var(--top-lg); }
+    .branch-pile{
+      height: var(--pile-h-lg);
+      padding-inline: var(--pile-pad-lg);
+      max-width: min(100%, calc(36rem + 2 * var(--pile-pad-lg)));
+    }
+    .pile-card{
+      top: var(--top-lg);
+      transform: translateX(-50%) translateX(var(--offset-lg)) rotate(var(--tilt));
+    }
+    .pile-card:hover,
+    .pile-card:focus-within{
+      transform: translateX(-50%) translateX(var(--offset-lg)) translateY(-1.25rem) rotate(0deg) scale(1.03);
+    }
   }
 
-  /* Respect a reduced-motion preference: keep the pile, drop the movement. */
+  /* Respect a reduced-motion preference: keep the fan, drop the movement. */
   @media (prefers-reduced-motion: reduce){
     .pile-card{ transition: none; }
     .pile-card:hover,
-    .pile-card:focus-within{ transform: translateX(var(--nudge)) rotate(var(--tilt)); }
+    .pile-card:focus-within{
+      transform: translateX(-50%) translateX(var(--offset)) rotate(var(--tilt));
+    }
+  }
+  @media (prefers-reduced-motion: reduce) and (min-width: 1024px){
+    .pile-card:hover,
+    .pile-card:focus-within{
+      transform: translateX(-50%) translateX(var(--offset-lg)) rotate(var(--tilt));
+    }
   }
 
   .soon::before{
