@@ -6,7 +6,7 @@ const Locations = () => {
     return (
         <>
             <TopBanner
-                Key='Locations' 
+                size="sm"
                 header='Locations & order online'
                 subheader="Come close, we don't bite"
             />
@@ -20,6 +20,7 @@ const Locations = () => {
                     locations.map((location) => {
                         return (
                             <Location
+                                key={`${location.state}-${location.city}`}
                                 state={location.state}
                                 city={location.city}
                                 address={location.address}

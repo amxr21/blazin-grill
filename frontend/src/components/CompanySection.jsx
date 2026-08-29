@@ -1,29 +1,37 @@
-const CompanySection = () => {
-    return (
-        <div className="flex gap-x-36">
-                    <div>
-                    <h3 className="text-lg lg:text-2xl font-normal lg:mb-6">INFO</h3>
-                    <ul className="space-y-1 text-sm lg:text-lg font-extralight">
-                        <a href="#"><li>Menu PDF</li></a>
-                        <a href="#"><li>Locations</li></a>
-                        <a href="#"><li>Franchising</li></a>
-                        <a href="#"><li>Our Secret</li></a>
-                    </ul>
-                    </div>
-                    
-                    {/* Company Section */}
-                    <div>
-                        <h3 className="text-lg lg:text-2xl font-normal lg:mb-6">COMPANY</h3>
-                        <ul className="space-y-1 text-sm lg:text-lg font-extralight">
-                            <a href="#"><li>About us</li></a>
-                            <a href="#"><li>Get in touch</li></a>
-                            <a href="#"><li>Join the team!</li></a>
-                            <a href="#"><li>FAQs</li></a>
-                        </ul>
-                    </div>
+import { Link } from 'react-router-dom'
 
-                </div>
-    )
-}
+const infoLinks = [
+    { label: 'Menu PDF', to: '/menu' },
+    { label: 'Locations', to: '/locations' },
+    { label: 'Franchising', to: '/us' },
+    { label: 'Our Secret', to: '/us' },
+]
+
+const companyLinks = [
+    { label: 'About us', to: '/us' },
+    { label: 'Get in touch', to: '/locations' },
+    { label: 'Join the team!', to: '/us' },
+    { label: 'FAQs', to: '/us' },
+]
+
+const LinkColumn = ({ title, links }) => (
+    <div>
+        <h3 className="text-lg lg:text-2xl font-normal lg:mb-6">{title}</h3>
+        <ul className="space-y-1 text-sm lg:text-lg font-extralight">
+            {links.map(({ label, to }) => (
+                <li key={label}>
+                    <Link to={to} className="hover:underline">{label}</Link>
+                </li>
+            ))}
+        </ul>
+    </div>
+)
+
+const CompanySection = () => (
+    <div className="flex gap-x-16 lg:gap-x-36">
+        <LinkColumn title="INFO" links={infoLinks} />
+        <LinkColumn title="COMPANY" links={companyLinks} />
+    </div>
+)
 
 export default CompanySection

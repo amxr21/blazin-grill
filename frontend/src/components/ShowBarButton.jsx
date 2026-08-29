@@ -1,54 +1,19 @@
-import { useEffect, useRef, useState } from "react";
-
-const ShowBarButton = () => {
-    const navbarLinksButton = useRef();
-    const [isClicked, setIsClicked] = useState(true);
-
-    const handleClickOutside = (e) => {
-        if (navbarLinksButton.current != e.target) {
-            setIsClicked(true);
-        }
-    };
-    
-    window.addEventListener('click', handleClickOutside);
-
-
-    useEffect(() => {
-        const navbarLinks = document.getElementById('NavbarLinks');
-        if (isClicked) {
-            navbarLinks.classList.replace('px-8', 'px-0');
-            navbarLinks.classList.replace('w-48', 'w-0');
-        } else {
-            navbarLinks.classList.replace('px-0', 'px-8');
-            navbarLinks.classList.replace('w-0', 'w-48');
-        }
-    }, [isClicked])
-
-
-
-    const handleClick = () => {
-        const navbarLinks = document.getElementById('NavbarLinks');
-        if (navbarLinks) {
-            if (isClicked) {
-                navbarLinks.classList.replace('px-8', 'px-0');
-                navbarLinks.classList.replace('w-48', 'w-0');
-            } else {
-                navbarLinks.classList.replace('px-0', 'px-8');
-                navbarLinks.classList.replace('w-0', 'w-48');
-            }
-        }
-        setIsClicked((prev) => !prev);
-    };
-
+const ShowBarButton = ({ isOpen, onToggle }) => {
     return (
         <button
-            ref={navbarLinksButton}
-            onClick={handleClick}
-            className="nav-bar flex items-center justify-center text-3xl leading-0 w-10 h-10 border-[0.5px] rounded-lg p-2"
+            type="button"
+            onClick={onToggle}
+            aria-label={isOpen ? 'Close menu' : 'Open menu'}
+            aria-expanded={isOpen}
+            aria-controls="NavbarLinks"
+            className="nav-bar relative z-[1000] flex h-10 w-10 flex-col items-center justify-center gap-[5px] rounded-lg border-[0.5px] p-2"
         >
-            =
+            {/* Three bars that morph into an X, so the control states its own mode. */}
+            <span className={`block h-[2px] w-5 bg-current transition-transform duration-300 ${isOpen ? 'translate-y-[7px] rotate-45' : ''}`} />
+            <span className={`block h-[2px] w-5 bg-current transition-opacity duration-300 ${isOpen ? 'opacity-0' : ''}`} />
+            <span className={`block h-[2px] w-5 bg-current transition-transform duration-300 ${isOpen ? '-translate-y-[7px] -rotate-45' : ''}`} />
         </button>
-    );
-};
+    )
+}
 
-export default ShowBarButton;
+export default ShowBarButton

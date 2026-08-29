@@ -1,12 +1,15 @@
 import { Word, Rectangle } from "../../components";
+import { useIsDesktop } from "../../hooks/useMediaQuery";
 
 import Burger from "../../assets/images/burger.png"
 
 const ClosingBanner = () => {
+    const isDesktop = useIsDesktop()
+
     return (
         <div id="ClosingBanner" className="bg-amber-100 relative my-20 lg:my-56 p-8 lg:p-16 flex flex-col gap-4 lg:gap-y-8">
             <div className="grid grid-cols-2 lg:flex lg:flex-row row w-full gap-1 lg:gap-x-5 text-4xl lg:text-8xl font-semibold italic uppercase">
-            {window.innerWidth > 1200
+            {isDesktop
                 ?
                 <>
                     <Word text={'Feeling'} />
@@ -24,7 +27,7 @@ const ClosingBanner = () => {
             </div>
 
             <div className="flex row w-full gap-1 lg:gap-x-5 text-4xl lg:text-8xl font-semibold italic uppercase">
-            {window.innerWidth > 1200
+            {isDesktop
                 ?
                 <>
                     <Word text={'Maybe'} />
@@ -42,7 +45,7 @@ const ClosingBanner = () => {
 
             <div className="grid grid-rows-2 lg:flex row w-full gap-1 lg:gap-x-5 text-4xl lg:text-8xl font-semibold italic uppercase">
                 {
-                    window.innerWidth > 1200
+                    isDesktop
                     ?
                     <>
                         <Word text={'Bring'} />
@@ -65,7 +68,7 @@ const ClosingBanner = () => {
                 }
             </div>
 
-            <img className="absolute lg:left-105 lg:-top-16 lg:w-[36rem] w-56 right-10 bottom-0 rotate-5" src={Burger} alt="" />
+            <img className="absolute lg:left-105 lg:-top-16 lg:w-[36rem] w-56 right-10 bottom-0 rotate-5" src={Burger} alt="" aria-hidden="true" />
 
 
         </div>

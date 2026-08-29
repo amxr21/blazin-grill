@@ -6,7 +6,7 @@ const Feature = ({index, header, paragraph, imageLink}) => {
                 <div className="paragraph text-[1.2rem] lg:text-3xl font-light">{paragraph}</div>
             </div>
             <div className="image flex-7 bg-amber-500">
-                <img src={imageLink} alt="" className="w-full" />
+                <img src={imageLink} alt="" aria-hidden="true" className="w-full" />
             </div>
         </div>
     )

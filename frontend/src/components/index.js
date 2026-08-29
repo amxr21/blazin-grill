@@ -22,3 +22,4 @@ export {default as Branches} from "./Branches"
 export {default as ShowBarButton} from "./ShowBarButton"
 
 export {default as NavLink} from "./NavLink"
+export {default as ScrollToTop} from "./ScrollToTop"
