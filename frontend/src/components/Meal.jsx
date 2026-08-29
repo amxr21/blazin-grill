@@ -3,22 +3,30 @@ import PriceLabel from "../assets/images/label.png"
 import { MealPrice } from './index'
 
 const Meal = ({image, name, category, ingredients, price}) => {
- 
+
     return (
-        <div className="meal flex flex-col items-center">
-            
+        <div className="meal group flex flex-col items-center">
+
             <div className={`meal-image ${category == 'sub' ? 'w-96' : 'w-fit'} relative flex flex-col items-center`}>
-                <img src={image} alt={name} loading="lazy" className="z-50 w-fit h-full" />
+                <img
+                    src={image}
+                    alt={name}
+                    loading="lazy"
+                    className="z-50 w-fit h-full transition-transform duration-300 group-hover:-translate-y-1 group-hover:scale-105"
+                />
 
                 <div className="absolute bottom-4 z-0 meal-shadow opacity-80 w-64 h-10 bg-black rounded-[50%] shadow-lg"></div>
             </div>
 
             <div className="line font-extralight bg-[#FBF7EE] h-6 mt-4 text-[#FBF7EE] border-t border-black w-3/4">...</div>
 
-            <div className="h-24 text-center">
+            {/* min-h instead of a fixed h-24: descriptions run to ~200 chars and
+                were being clipped at the longer end. */}
+            <div className="min-h-24 text-center px-2">
                 <h3 className="meal-name text-2xl font-normal uppercase">{name}</h3>
                 <p className="meal-name text-[1.18rem] lg:text-lg font-extralight">{ingredients}</p>
             </div>
+
             <div className="w-full flex justify-center gap-6">
                 {
                     typeof price != "object"
@@ -31,11 +39,7 @@ const Meal = ({image, name, category, ingredients, price}) => {
                         )
                     })
                 }
-
             </div>
-
-            
-
         </div>
     )
 }

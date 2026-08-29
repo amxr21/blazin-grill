@@ -41,6 +41,39 @@
     box-shadow: -14px 14px 20px rgba(0, 0, 0, 0.150);
   }
 
+  /* The pile: each card sits on the one before it, tilted, so only the top
+     edge of the earlier cards shows. Hover lifts a card clear of the stack. */
+  .branch-pile{
+    height: var(--pile-h);
+  }
+
+  .pile-card{
+    top: var(--top);
+    transform: translateX(var(--nudge)) rotate(var(--tilt));
+    transform-origin: center top;
+    transition: transform 350ms ease, box-shadow 350ms ease;
+    will-change: transform;
+  }
+
+  .pile-card:hover,
+  .pile-card:focus-within{
+    transform: translateX(var(--nudge)) translateY(-1.25rem) rotate(0deg) scale(1.02);
+    box-shadow: -18px 22px 34px rgba(0, 0, 0, 0.28);
+    z-index: 99;
+  }
+
+  @media (min-width: 1024px){
+    .branch-pile{ height: var(--pile-h-lg); }
+    .pile-card{ top: var(--top-lg); }
+  }
+
+  /* Respect a reduced-motion preference: keep the pile, drop the movement. */
+  @media (prefers-reduced-motion: reduce){
+    .pile-card{ transition: none; }
+    .pile-card:hover,
+    .pile-card:focus-within{ transform: translateX(var(--nudge)) rotate(var(--tilt)); }
+  }
+
   .soon::before{
     content: "s";
     position: absolute;

@@ -1,42 +1,47 @@
 import { BranchCard } from './index'
-import { useIsDesktop } from '../hooks/useMediaQuery'
-
 import { branches } from '../data'
 
-// Vertical rhythm of the scattered "scrapbook" stack, in rem — the spacing the
-// original `top-${i*90}` / `lg:top-${i*118}` was reaching for.
-const STEP_REM = 90
-const STEP_REM_DESKTOP = 118
+/**
+ * A pile of photos on a table, not a column of cards: each branch sits mostly
+ * on top of the one before it, rotated slightly, so the stack reads as one
+ * stack of memories telling the restaurant's story.
+ *
+ * Only the top edge of each earlier card stays visible, and hovering lifts a
+ * card out of the pile.
+ */
+
+// How far each card slides down from the one beneath it (rem). Small on
+// purpose — a large step scatters the cards instead of piling them.
+const STEP = { base: 5, desktop: 7 }
+
+// Hand-picked so the pile looks tossed rather than mechanically alternated.
+const TILT = [-6, 4, -3, 7, -5, 3]
+const NUDGE = [-14, 10, -6, 16, -10, 6]
 
 const Branches = () => {
-    const isDesktop = useIsDesktop()
-    const step = isDesktop ? STEP_REM_DESKTOP : STEP_REM
+    const count = branches.length
+    // Container must cover the last card plus its own height.
+    const heightBase = STEP.base * (count - 1) + 24
+    const heightDesktop = STEP.desktop * (count - 1) + 42
 
     return (
-        <div className='relative flex flex-col lg:gap-4 h-[120rem] lg:h-[160rem] -mt-16 lg:-mt-24'>
-
-            {
-                branches.map((branch, i) => {
-                    return (
-                        <BranchCard
-                            key={branch.id}
-                            Id={i}
-                            imageLink={branch.image}
-                            header={branch.name}
-                            storyText={branch.description}
-                            // Offsets go through inline style, not class names: Tailwind
-                            // only emits classes it finds as literal text, so the old
-                            // `top-${...}` compiled to nothing and every card sat at top-0.
-                            style={{ top: `${i * step}rem` }}
-                            classes={i % 2 ? "-right-15 lg:right-30 rotate-10" : "-left-15 lg:left-30 -rotate-10"}
-                        />
-
-                    )
-                })
-
-            }
-
-
+        <div
+            className="branch-pile relative mx-auto w-full max-w-[20rem] lg:max-w-[36rem]"
+            style={{ '--pile-h': `${heightBase}rem`, '--pile-h-lg': `${heightDesktop}rem` }}
+        >
+            {branches.map((branch, i) => (
+                <BranchCard
+                    key={branch.id}
+                    Id={i}
+                    imageLink={branch.image}
+                    header={branch.name}
+                    storyText={branch.description}
+                    tilt={TILT[i % TILT.length]}
+                    nudge={NUDGE[i % NUDGE.length]}
+                    step={STEP}
+                    index={i}
+                />
+            ))}
         </div>
     )
 }
