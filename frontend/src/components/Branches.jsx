@@ -18,7 +18,7 @@ const STEP = { base: 17, desktop: 32 }
 
 // Sideways swing away from the centre line, per index step (rem). Every card
 // alternates sides, and each one sits a little further out than the last.
-const SPREAD = { base: 1.6, desktop: 5.5 }
+const SPREAD = { base: 2.4, desktop: 9 }
 
 // Slight tilt so the fan looks laid by hand, not plotted.
 const TILT = [-5, 4, -3, 6, -4, 3]
