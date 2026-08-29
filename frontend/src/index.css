@@ -73,7 +73,9 @@
   @media (min-width: 1024px){
     .branch-pile{
       height: var(--pile-h-lg);
-      padding-inline: var(--pile-pad-lg);
+      /* Cap the swing against the viewport: at ~1024-1050px the full 11rem of
+         padding would push the fan wider than the available space. */
+      padding-inline: min(var(--pile-pad-lg), calc((100vw - 44rem) / 2));
       max-width: min(100%, calc(36rem + 2 * var(--pile-pad-lg)));
     }
     .pile-card{

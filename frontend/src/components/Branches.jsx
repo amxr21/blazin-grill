@@ -9,13 +9,16 @@ import { branches } from '../data'
  * text clear of the card above it and readable.
  */
 
-// Vertical slide between consecutive cards (rem). Smaller than the card
-// height, which is what makes this a pile rather than a scattered column.
-const STEP = { base: 5, desktop: 9 }
+// Vertical slide between consecutive cards (rem). Text begins 13rem (mobile)
+// / 28rem (desktop) down a card, so the step has to clear that or every
+// buried card shows nothing but its photo. These values expose the heading
+// plus ~4rem of story while still leaving 5rem/8rem of overlap, so the stack
+// still reads as a pile.
+const STEP = { base: 17, desktop: 32 }
 
 // Sideways swing away from the centre line, per index step (rem). Every card
 // alternates sides, and each one sits a little further out than the last.
-const SPREAD = { base: 1.15, desktop: 3.4 }
+const SPREAD = { base: 1.6, desktop: 5.5 }
 
 // Slight tilt so the fan looks laid by hand, not plotted.
 const TILT = [-5, 4, -3, 6, -4, 3]
@@ -28,8 +31,8 @@ const Branches = () => {
     const padBase = maxStep * SPREAD.base
     const padDesktop = maxStep * SPREAD.desktop
 
-    const heightBase = STEP.base * (count - 1) + 24
-    const heightDesktop = STEP.desktop * (count - 1) + 42
+    const heightBase = STEP.base * (count - 1) + 23
+    const heightDesktop = STEP.desktop * (count - 1) + 41
 
     return (
         <div
